@@ -1,0 +1,18 @@
+<!-- Events Start -->
+<section class="section" id="events">
+    <div class="events">
+        <div class="events-wrapper">
+            <div *ngFor="let info of datos" class="events-item">
+                <div class="section-header">
+                    <h5 class="section-label">{{info.titulo}}</h5>
+                    <h2 class="section-title">{{info.subtitulo}}</h2>
+                    <p class="section-subtitle">
+                        {{info.descripcion}}
+                    </p>
+                </div>
+                <img src="{{info.imagen}}" alt="" class="events-item-image" />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Events End -->

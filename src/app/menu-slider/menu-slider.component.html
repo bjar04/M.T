@@ -1,0 +1,28 @@
+<!-- Menu Slider Start -->
+<section class="section" id="menu">
+    <div class="section-header text-center">
+        <h5 class="section-label label">Always Tasty Burger</h5>
+        <h2 class="section-title">Choose & Enjoy</h2>
+        <p class="section-subtitle text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        </p>
+    </div>
+
+    <div id="menu-slider" *ngFor="let info of datos" class="menu-slider">
+        <div class="menu-slider-item"> 
+            <div class="menu-slider-item-desc">
+                <h4 class="menu-slider-item-title">{{info.nombre}}</h4>
+                <p class="menu-slider-item-subtitle">{{info.descripcion}}</p>
+                <a href="#contact" class="page-scroll button">Order Now</a>
+            </div>
+        </div>
+        <div class="menu-slider-item">
+            <div class="menu-slider-item-image">
+                <img src="{{info.imagen}}" alt="" class="menu-slider-item-burger" />
+                <!--                    <img src="assets/img/shadow.png" alt="" class="menu-slider-item-shadow" />-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Menu Slider End -->

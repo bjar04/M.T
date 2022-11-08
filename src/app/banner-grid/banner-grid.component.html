@@ -1,0 +1,28 @@
+<!-- Banner Grid Start -->
+<div class="banner-grid">
+    <div class="banner-grid-row">
+        <div class="banner-grid-column">
+            <a *ngFor="let info of datos_big" href="" title="" class="banner-grid-big">
+                <div class="banner-grid-text">
+                    <h4 class="banner-grid-subject">{{info.nombre}}</h4>
+                    <h3 class="banner-grid-title">{{info.descripcion}}</h3>
+                    <h3 class="banner-grid-title">{{info.precio|currency}}</h3>
+                </div>
+                <img src="{{info.imagen}}" alt="" class="banner-grid-image" />
+                <button class="clk">BUY</button>
+            </a>
+        </div>
+        <div class="banner-grid-column">
+            <a *ngFor="let info of datos_small" href="" title="" class="banner-grid-small">
+                <div class="banner-grid-text">
+                    <h4 class="banner-grid-subject">{{info.nombre}}</h4>
+                    <h3 class="banner-grid-title">{{info.subtitulo}}</h3>
+                    <h3 class="banner-grid-title">{{info.precio|currency}}</h3>
+                </div>
+                <img src="{{info.imagen}}" alt="" class="banner-grid-image" />
+                <button class="clk">Comprar</button>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Banner Grid End -->

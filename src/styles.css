@@ -1,0 +1,11 @@
+.clk{
+    border-radius: 10px;
+    background-color: #ca0000;
+    color: #FFF;
+    width: 170px;
+    height: 5vh;
+    font-family: cursive;
+    position: absolute;
+    top: 80%;
+    right: 2%;
+}
